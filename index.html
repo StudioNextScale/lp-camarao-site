@@ -977,7 +977,7 @@
             });
         });
 
-        // 5. Formulário Hero -> WhatsApp com formatação limpa
+        // 5. Formulário Hero -> WhatsApp com texto limpo e direto
         const heroForm = document.getElementById('hero-lead-form');
         if (heroForm) {
             heroForm.addEventListener('submit', function(e) {
@@ -989,15 +989,13 @@
                 const product = document.getElementById('lead-product').value;
                 const qty = document.getElementById('lead-qty').value.trim() || 'A combinar';
 
-                const message = `🍤 *NOVO PEDIDO / COTAÇÃO - LP CAMARÃO*\n` +
-                                `-----------------------------------\n` +
-                                `👤 *Nome:* ${name}\n` +
-                                `📱 *Contato:* ${phone}\n` +
-                                `🎯 *Modalidade:* ${type}\n` +
-                                `📦 *Produto:* ${product}\n` +
-                                `⚖️ *Quantidade Estimada:* ${qty}\n` +
-                                `📍 *Local:* Mombaça - CE (ou Região)\n` +
-                                `-----------------------------------\n` +
+                const message = `NOVO PEDIDO / COTAÇÃO: LP CAMARÃO\n\n` +
+                                `Nome: ${name}\n` +
+                                `Contato: ${phone}\n` +
+                                `Modalidade: ${type}\n` +
+                                `Produto: ${product}\n` +
+                                `Quantidade Estimada: ${qty}\n` +
+                                `Local: Mombaça - CE ou Região\n\n` +
                                 `Olá, LP Camarão! Vim pelo site e gostaria de confirmar valores e entrega.`;
 
                 const encodedMessage = encodeURIComponent(message);
@@ -1007,20 +1005,17 @@
 
         // 6. Pedido Direto de Produto
         function fazerPedidoProduto(nomeProduto) {
-            const message = `🍤 *CONSULTA DE PRODUTO - LP CAMARÃO*\n` +
-                            `-----------------------------------\n` +
-                            `Olá! Vi no site o produto:\n` +
-                            `👉 *${nomeProduto}*\n\n` +
-                            `Gostaria de saber o valor atual e se há disponibilidade para entrega em Mombaça/região.`;
+            const message = `CONSULTA DE PRODUTO: LP CAMARÃO\n\n` +
+                            `Olá! Vi no site o produto: ${nomeProduto}\n\n` +
+                            `Gostaria de saber o valor atual e se há disponibilidade para entrega em Mombaça ou região.`;
 
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         // 7. Cotação por Modalidade
         function fazerPedidoModalidade(modalidade) {
-            const message = `🍤 *CONSULTA COMERCIAL - LP CAMARÃO*\n` +
-                            `-----------------------------------\n` +
-                            `Olá! Gostaria de consultar condições para compras no *${modalidade}* em Mombaça e região.\n` +
+            const message = `CONSULTA COMERCIAL: LP CAMARÃO\n\n` +
+                            `Olá! Gostaria de consultar condições para compras no ${modalidade} em Mombaça e região.\n` +
                             `Poderiam me enviar a tabela de preços atualizada?`;
 
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank');
