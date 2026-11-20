@@ -87,10 +87,10 @@
     <!-- ========================================== -->
     <!-- BARRA SUPERIOR DE AVISO / ENVIOS (100% W) -->
     <!-- ========================================== -->
-    <div class="w-full bg-gradient-to-r from-lp-red via-red-600 to-rose-700 py-2.5 px-4 text-center text-xs sm:text-sm font-bold tracking-wide text-white shadow-md relative z-40">
-        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
-            <i class="fa-solid fa-truck-fast shrink-0"></i>
-            <span>ENVIAMOS PARA TODA A REGI&Atilde;O DE MOMBA&Ccedil;A - CE! &bull; ATACADO E VAREJO &#129424;</span>
+    <div class="w-full bg-gradient-to-r from-lp-red via-red-600 to-rose-700 py-2 sm:py-2.5 px-3 sm:px-4 text-center text-[11px] sm:text-xs md:text-sm font-bold tracking-wide text-white shadow-md relative z-40">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-1.5 sm:gap-2 text-center">
+            <i class="fa-solid fa-truck-fast shrink-0 text-xs sm:text-sm"></i>
+            <span class="break-words">ENVIAMOS PARA TODA A REGI&Atilde;O DE MOMBA&Ccedil;A - CE! &bull; ATACADO E VAREJO &#129424;</span>
         </div>
     </div>
 
@@ -98,45 +98,47 @@
     <!-- 1. HEADER (CABEÇALHO FIXO COM LOGO OFICIAL)-->
     <!-- ========================================== -->
     <header class="sticky top-0 z-50 bg-lp-black/95 backdrop-blur-md border-b border-lp-border transition-all duration-300 w-full" id="main-header">
-        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-4 2xl:px-8 h-20 sm:h-24 flex items-center justify-between gap-2 sm:gap-4">
+        <!-- Cabeçalho Principal Fixo -->
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 lg:h-24 flex items-center justify-between gap-2 sm:gap-4">
             
             <!-- Logo Oficial LP Camarão com Enquadramento Circular e Realce -->
-            <a href="#" class="flex items-center gap-3 sm:gap-3.5 group shrink-0">
-                <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-full border-2 border-lp-red overflow-hidden bg-lp-black shadow-xl shadow-lp-red/30 group-hover:border-white transition-all duration-300 flex items-center justify-center shrink-0 ring-4 ring-lp-red/20 group-hover:ring-white/20">
+            <a href="#" class="flex items-center gap-2 sm:gap-3.5 group shrink-0 min-w-0">
+                <div class="relative w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 rounded-full border-2 border-lp-red overflow-hidden bg-lp-black shadow-xl shadow-lp-red/30 group-hover:border-white transition-all duration-300 flex items-center justify-center shrink-0 ring-2 sm:ring-4 ring-lp-red/20 group-hover:ring-white/20">
                     <img src="logo.jpg" alt="Logo LP Camarão" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
                 </div>
-                <div class="whitespace-nowrap">
+                <div class="min-w-0">
                     <div class="flex items-center gap-1.5 sm:gap-2">
-                        <span class="font-logo text-xl sm:text-2xl font-black text-white tracking-wide">
+                        <span class="font-logo text-base sm:text-xl lg:text-2xl font-black text-white tracking-wide truncate">
                             LP <span class="text-white">Camarão</span>
                         </span>
-                        <span class="text-[9px] sm:text-[10px] bg-lp-red text-white font-extrabold px-1.5 py-0.5 rounded tracking-wider shadow">
+                        <span class="text-[8px] sm:text-[9px] lg:text-[10px] bg-lp-red text-white font-extrabold px-1 sm:px-1.5 py-0.5 rounded tracking-wider shadow shrink-0">
                             DESDE 2024
                         </span>
                     </div>
-                    <span class="text-[11px] font-semibold text-lp-gray uppercase tracking-widest flex items-center gap-1 mt-0.5">
-                        <i class="fa-solid fa-location-dot text-lp-red text-xs"></i> Mombaça &bull; CE
+                    <span class="text-[10px] sm:text-[11px] font-semibold text-lp-gray uppercase tracking-wider sm:tracking-widest flex items-center gap-1 mt-0.5 truncate">
+                        <i class="fa-solid fa-location-dot text-lp-red text-[10px] sm:text-xs shrink-0"></i> Mombaça &bull; CE
                     </span>
                 </div>
             </a>
 
             <!-- Área Direita: Botão do WhatsApp Oficial + Botão de 3 Listrinhas -->
-            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+            <div class="flex items-center gap-1.5 sm:gap-3 lg:gap-4 shrink-0">
                 <a href="https://instagram.com/lp_camaraoreserva" target="_blank" rel="noopener noreferrer" 
-                   class="hidden sm:flex text-slate-400 hover:text-white p-2 transition-colors" title="Instagram Oficial @lp_camaraoreserva">
+                   class="hidden md:flex text-slate-400 hover:text-white p-2 transition-colors" title="Instagram Oficial @lp_camaraoreserva">
                     <i class="fa-brands fa-instagram text-xl"></i>
                 </a>
                 
                 <a href="https://wa.me/5588999275674?text=Ol%C3%A1%2C%20LP%20Camar%C3%A3o!%20Gostaria%20de%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer"
-                   class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-3.5 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-glow-green transition-all flex items-center gap-2 group whitespace-nowrap">
-                    <i class="fa-brands fa-whatsapp text-base sm:text-lg group-hover:scale-110 transition-transform"></i>
-                    <span>(88) 99927-5674</span>
+                   class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-2.5 sm:px-4 lg:px-5 py-2 sm:py-2.5 rounded-full text-[11px] sm:text-xs lg:text-sm shadow-glow-green transition-all flex items-center gap-1.5 sm:gap-2 group whitespace-nowrap">
+                    <i class="fa-brands fa-whatsapp text-sm sm:text-base lg:text-lg group-hover:scale-110 transition-transform"></i>
+                    <span class="hidden sm:inline">(88) 99927-5674</span>
+                    <span class="sm:hidden">WhatsApp</span>
                 </a>
 
                 <!-- Botão das Três Listrinhas (Menu Lateral Gaveta) -->
-                <button id="sidebar-open-btn" class="flex items-center gap-2 bg-lp-card hover:bg-lp-red border border-lp-border hover:border-lp-red text-white font-bold px-3.5 py-2.5 rounded-xl transition-all shadow-md group focus:outline-none" aria-label="Abrir Menu Lateral">
-                    <i class="fa-solid fa-bars-staggered text-lg text-lp-red group-hover:text-white transition-colors"></i>
-                    <span class="hidden md:inline text-xs uppercase tracking-wider font-extrabold">Menu</span>
+                <button id="sidebar-open-btn" class="flex items-center gap-1.5 sm:gap-2 bg-lp-card hover:bg-lp-red border border-lp-border hover:border-lp-red text-white font-bold px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-xl transition-all shadow-md group focus:outline-none" aria-label="Abrir Menu Lateral">
+                    <i class="fa-solid fa-bars-staggered text-base sm:text-lg text-lp-red group-hover:text-white transition-colors"></i>
+                    <span class="hidden lg:inline text-xs uppercase tracking-wider font-extrabold">Menu</span>
                 </button>
             </div>
         </div>
@@ -147,7 +149,7 @@
     <!-- ========================================== -->
     <div id="sidebar-overlay" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
     
-    <aside id="sidebar-drawer" aria-hidden="true" class="fixed top-0 right-0 h-full w-80 sm:w-96 bg-lp-dark border-l border-lp-border z-50 translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between">
+    <aside id="sidebar-drawer" aria-hidden="true" class="fixed top-0 right-0 h-full w-[85vw] max-w-sm sm:w-96 bg-lp-dark border-l border-lp-border z-50 translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col justify-between">
         <!-- Topo da Gaveta -->
         <div class="p-6 border-b border-lp-border flex items-center justify-between">
             <div class="flex items-center gap-3">
